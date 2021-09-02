@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </head>
 
 <body>
@@ -37,21 +40,24 @@
             </div>
             </div>
     </nav>-->
-    <nav>
-        <input type="checkbox" name="res-menu" id="res-menu">
-        <label for="res-menu">
-            <a class="navbar-brand m-sm-5 mt-sm-2" id="brand" href="#" style="font-family: 'Crimson Pro', serif; "><span style="border: 1px solid white; padding: 5px;">THIS INTERIOR</span></a>
-            <i class="material-icons" id="ham">menu</i>
-            <i class="material-icons" id="cross">close</i>
-        </label>
-        
-        <ul>
-            <li><a href="#" class="active" style="font-family: Montserrat, sans-serif;font-weight: bold;">Home</a></li>
-            <li><a href="#" style="font-family: Montserrat, sans-serif;font-weight: bold;">Collection</a></li>
-            <li><a href="#" style="font-family: Montserrat, sans-serif;font-weight: bold;">About</a></li>
-            <li><a href="#" style="font-family: Montserrat, sans-serif;font-weight: bold;">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav>
+            <input type="checkbox" name="res-menu" id="res-menu">
+            <label for="res-menu">
+                <a class="brand" id="brand" href="#" style="font-family: 'Crimson Pro', serif; "><span style="border: 1px solid white; padding: 5px;">THIS INTERIOR</span></a>
+                <i class="material-icons" id="ham">menu</i>
+                <i class="material-icons" id="cross">close</i>
+            </label>
+            
+            <ul>
+                <li><a href="#" class="active" style="font-family: Montserrat, sans-serif;font-weight: bold;">Home</a></li>
+                <li><a href="#" style="font-family: Montserrat, sans-serif;font-weight: bold;">Collection</a></li>
+                <li><a href="#" style="font-family: Montserrat, sans-serif;font-weight: bold;">About</a></li>
+                <li><a href="#" style="font-family: Montserrat, sans-serif;font-weight: bold;">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+   
 
     <section class="m-sm-5">
         <div class="container" id="main-content">
@@ -87,8 +93,9 @@
 ; font-family: raleway">created by HoneyBerman - devChallenges.io</p>
     </div>
 </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/bootstrap/js/index.js"></script>
+  
+   
+
 
 </body>
 

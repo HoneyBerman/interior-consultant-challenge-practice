@@ -34,6 +34,7 @@ body {
 }
 a {
   color: white;
+  text-decoration:none;
 }
 a:hover {
   color: white;
@@ -47,8 +48,7 @@ a:hover {
   margin: 50px;
 } */
 /*ended here yesterday*/
-.navbar-brand {
-  position: absolute;
+.brand {
   width: auto;
   top: 20px;
   text-align: left;
@@ -59,17 +59,21 @@ nav {
   height: 80px;
   background: #181719;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 nav ul {
   float: right;
-  margin-right: 25px;
   list-style: none;
   margin-top: 20px;
+  margin-right: 20px;
 }
 nav ul li {
   display: inline-block;
   line-height: 50px;
   margin: 0 15px;
+
 }
 
 nav ul li a {
@@ -104,6 +108,7 @@ label #ham,
 }
 #res-menu {
   display: none;
+  
 }
 .imgcard-wrapper {
   position: relative;
@@ -118,9 +123,9 @@ label #ham,
 @media (max-width: 768px) {
   label #ham {
     display: block;
-    top: 10px;
+    top: 15px;
   }
-  .navbar-brand {
+  .brand {
     top: 10px;
     left: 10px;
   }
@@ -138,6 +143,7 @@ label #ham,
     display: flex;
     flex-direction: column;
   }
+  
 
   nav ul li a {
     font-size: 20px;
@@ -160,7 +166,7 @@ label #ham,
   #res-menu:checked ~ label #cross {
     display: block;
   }
-  #res-menu:checked ~ label #brand {
+  #res-menu:checked ~ label .brand {
     display: none;
   }
 }
@@ -168,15 +174,16 @@ label #ham,
 @media screen and (max-width: 420px) {
   label #ham,
   #cross {
-    top: 0px;
     right: -15px;
   }
   nav ul {
     top: 40px;
+    
   }
+  
 }
 @media screen and (min-width: 768px) {
-  .navbar-brand {
+  .brand {
     margin: 10px 25px 16px 0px;
   }
 }
@@ -196,10 +203,12 @@ label #ham,
   .card {
     width: auto;
   }
-#footer{
-margin-top:80px;}
-#main-content{
-margin-top:50px;}
+  #footer{
+  margin-top:80px;
+  }
+  #main-content {
+  margin-top:50px;
+  }
 }
 
 @media (min-width: 376px) {
